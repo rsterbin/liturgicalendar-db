@@ -18,5 +18,5 @@ Copy `rambler.json.dist` to `rambler.json` and enter your connection information
 
 From this directory, run `rambler`. If you get help message, everything is working correctly.
 
-To bring the database up to speed with all schema and data provided here, run `rambler apply`.
+To bring the database up to speed with all schema and data provided here, run `rambler apply --all`.
 

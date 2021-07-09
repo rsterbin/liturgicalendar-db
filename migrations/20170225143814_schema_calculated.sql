@@ -1,3 +1,6 @@
+
+-- rambler up
+
 --
 -- These tables define the calculated and cached results for the liturgical calendar
 --
@@ -49,4 +52,11 @@ CREATE TABLE cached_services (
         REFERENCES cached (cached_id)
         ON DELETE CASCADE ON UPDATE NO ACTION
 );
+
+-- rambler down
+
+DROP TABLE cached_services;
+DROP TABLE cached;
+DROP TABLE calculated_services;
+DROP TABLE calculated;
 

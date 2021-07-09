@@ -1,3 +1,6 @@
+
+-- rambler up
+
 --
 -- Federal holidays
 --
@@ -81,4 +84,9 @@ INSERT INTO federal_holidays (name, code,
         '14:00:00',
         'The church closes today at 2:00 PM because of the New Year celebrations in Times Square.', true
     );
+
+-- rambler down
+
+DELETE FROM federal_holidays;
+ALTER SEQUENCE federal_holidays_holiday_id_seq RESTART;
 

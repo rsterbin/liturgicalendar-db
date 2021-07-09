@@ -1,3 +1,6 @@
+
+-- rambler up
+
 --
 -- Define the liturgical seasons of the year
 --
@@ -161,4 +164,8 @@ INSERT INTO seasons (name, code, color, sort_order,
         NULL, NULL, NULL, NULL,
         'Friday Abstinence', NULL, NULL
     );
+
+-- rambler down
+
+TRUNCATE TABLE seasons RESTART IDENTITY;
 

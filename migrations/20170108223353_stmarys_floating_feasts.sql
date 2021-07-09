@@ -1,3 +1,6 @@
+
+-- rambler up
+
 --
 -- Floating Feasts
 --
@@ -34,4 +37,8 @@ INSERT INTO floating_feasts (name, code, otype_id, placement_index, algorithm, c
     valid_end)
     VALUES ('Parish Requiem', 'parish-requiem', 6, 1, 'parish_requiem_4_skip', 'black',
     '2014-12-31 23:59:59' AT TIME ZONE 'America/New_York');
+
+-- rambler down
+
+TRUNCATE TABLE floating_feasts RESTART IDENTITY;
 

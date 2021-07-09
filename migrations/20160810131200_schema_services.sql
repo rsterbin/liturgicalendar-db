@@ -1,3 +1,6 @@
+
+-- rambler up
+
 --
 -- These tables define the services, the selection of services that make up a
 -- daily (or eve-of) schedule, and the patterns that define which schedule is
@@ -99,4 +102,13 @@ CREATE OR REPLACE FUNCTION valid_for_date_range(
         or ( $4 is null and $3 <= $2 )
         or ( $3 is not null and $4 is not null and $3 <= $2 and $4 >= $1 );'
     LANGUAGE SQL;
+
+-- rambler down
+
+DROP TABLE service_patterns;
+DROP TABLE schedule_services;
+DROP TABLE schedules;
+DROP TABLE services;
+DROP FUNCTION valid_for_date(given timestamp with time zone, valid_start timestamp with time zone, valid_end timestamp with time zone);
+DROP FUNCTION valid_for_date_range(given_start timestamp with time zone, given_end timestamp with time zone, valid_start timestamp with time zone, valid_end timestamp with time zone);
 

@@ -1,3 +1,6 @@
+
+-- rambler up
+
 --
 -- These tables define the title, schedule of services, and color to be used for a particular day.
 --
@@ -23,4 +26,9 @@ CREATE TABLE completed_services (
         REFERENCES completed (completed_id)
         ON DELETE CASCADE ON UPDATE NO ACTION
 );
+
+-- rambler down
+
+DROP TABLE completed_services;
+DROP TABLE completed;
 

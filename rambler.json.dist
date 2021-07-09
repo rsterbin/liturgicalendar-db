@@ -1,0 +1,10 @@
+{
+	"directory": "migrations",
+	"driver": "postgresql",
+	"host": "YOURHOST",
+	"port": 5432,
+	"user": "YOURUSER",
+	"password": "YOURPASSWORD",
+	"database": "liturgicalendar",
+	"table": "migrations"
+}

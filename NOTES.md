@@ -1,4 +1,5 @@
 Answered questions from Fr Gerth --
+
 * Is the change from white to gold for Annunciation an intentional change or a mistake that got carried from the previous year's transfer?
   * YES, this is correct
 * The list of Commemorations needs confirmation, as there are some important variations from the Episcopal calendars I've found (e.g. http://satucket.com/lectionary/Calendar.htm)

@@ -1,3 +1,6 @@
+
+-- rambler up
+
 --
 -- This table defines the federal holidays, which are calculated according to an
 -- algorithm the way feasts are, but do not carry colors or services, just notes
@@ -23,4 +26,8 @@ CREATE TABLE federal_holidays (
 
 CREATE INDEX federal_holidays_code_idx ON federal_holidays (code);
 CREATE INDEX federal_holidays_placement_idx ON federal_holidays (placement_index);
+
+-- rambler down
+
+DROP TABLE federal_holidays;
 

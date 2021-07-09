@@ -1,3 +1,6 @@
+
+-- rambler up
+
 --
 -- This table defines the floating feasts, which are not attached to a
 -- particular calendar day, or calculated from a particular holiday, but are
@@ -27,4 +30,8 @@ CREATE TABLE floating_feasts (
 
 CREATE INDEX floating_feasts_code_idx ON floating_feasts (code);
 CREATE INDEX floating_feasts_placement_idx ON floating_feasts (placement_index);
+
+-- rambler down
+
+DROP TABLE floating_feasts;
 

@@ -48,3 +48,5 @@ Evening Prayer is only said by those who are not able to participate in the Cele
   * July 18: Bartolomé de las Casas, Friar and Missionary to the Indies, 1566
 
 
+* At some point I want to break out St Mary's data into a separate migration file from the schema so it can be useful for other churches, but maybe not. We'll see.
+

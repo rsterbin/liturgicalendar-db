@@ -1,3 +1,6 @@
+
+-- rambler up
+
 --
 -- This table defines the liturgical seasons that set the base color, name,
 -- notes, and services for each part of the year
@@ -37,4 +40,8 @@ CREATE TABLE seasons (
     CONSTRAINT liturigal_seasons_pk PRIMARY KEY (season_id),
     CONSTRAINT liturigal_seasons_calc_from CHECK (calculate_from IN ('easter', 'christmas', NULL))
 );
+
+-- rambler down
+
+DROP TABLE seasons;
 

@@ -1,3 +1,6 @@
+
+-- rambler up
+
 --
 -- Moveable Feasts
 --
@@ -235,4 +238,8 @@ INSERT INTO moveable_feasts (name, code, otype_id, placement_index,
     VALUES ('The First Sunday after the Epiphany: The Baptism of Our Lord Jesus Christ', 'baptism', 2, 5,
         'epiphany', 'sundays_after', 1, true, 'gold',
         '2011-01-01 00:00:00' AT TIME ZONE 'America/New_York');
+
+-- rambler down
+
+TRUNCATE TABLE moveable_feasts RESTART IDENTITY;
 

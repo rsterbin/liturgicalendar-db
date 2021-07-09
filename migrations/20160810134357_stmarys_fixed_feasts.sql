@@ -1,5 +1,8 @@
+
+-- rambler up
+
 --
--- Fixed feasts
+-- Fixed feasts (separated by month for clarity)
 --
 
 -- Fixed feasts: January
@@ -219,4 +222,8 @@ INSERT INTO fixed_feasts (name, otype_id, month, day, schedule_pattern, color, v
 INSERT INTO fixed_feasts (name, otype_id, month, day, schedule_pattern, color) VALUES ('Saint John, Apostle and Evangelist', 3, 12, 27, 'weekday-feast', 'white');
 INSERT INTO fixed_feasts (name, otype_id, month, day, schedule_pattern, color) VALUES ('The Holy Innocents', 3, 12, 28, 'weekday-feast', 'red');
 INSERT INTO fixed_feasts (name, otype_id, month, day, color) VALUES ('Thomas Becket, Archbishop of Canterbury, 1170', 4, 12, 29, 'red');
+
+-- rambler down
+
+TRUNCATE TABLE fixed_feasts RESTART IDENTITY;
 

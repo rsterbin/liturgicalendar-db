@@ -1,3 +1,6 @@
+
+-- rambler up
+
 --
 -- This table defines the moveable feasts, which are not attached to a
 -- particular calendar day, but are calculated, usually from the date of Easter
@@ -30,4 +33,8 @@ CREATE TABLE moveable_feasts (
 
 CREATE INDEX moveable_feasts_code_idx ON moveable_feasts (code);
 CREATE INDEX moveable_feasts_placement_idx ON moveable_feasts (placement_index);
+
+-- rambler down
+
+DROP TABLE moveable_feasts;
 

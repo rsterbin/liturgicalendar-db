@@ -1,3 +1,6 @@
+
+-- rambler up
+
 --
 -- This table defines the fixed feasts, which are attached to a particular
 -- calendar day, but can (depending on precedence) be transferred to another
@@ -27,4 +30,8 @@ CREATE TABLE fixed_feasts (
 
 CREATE INDEX fixed_feasts_month_idx ON fixed_feasts (month);
 CREATE INDEX fixed_feasts_date_idx ON fixed_feasts (month, day);
+
+-- rambler down
+
+DROP TABLE fixed_feasts;
 

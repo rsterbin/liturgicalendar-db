@@ -1,3 +1,6 @@
+
+-- rambler up
+
 --
 -- These tables define the overrides used to tweak a particular block in the liturgical calendar
 --
@@ -25,4 +28,9 @@ CREATE TABLE override_services (
         REFERENCES overrides (override_id)
         ON DELETE CASCADE ON UPDATE NO ACTION
 );
+
+-- rambler down
+
+DROP TABLE override_services;
+DROP TABLE overrides;
 
